@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Beachside Bliss</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+
+        }
+
+        body {
+    
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-image: url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/be/42/39/getlstd-property-photo.jpg?w=900&h=500&s=1");
+            background-size: cover;
+            opacity: 0;
+            animation: slideDown 1s ease forwards;
+        }
+
+        @keyframes slideDown {
+            0% {
+                top: -50px;
+                opacity: 0;
+            }
+            100% {
+                top: 10px;
+                opacity: 1;
+            }
+        }
+            
+
+        .navbar {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            background: rgb(5, 87, 69);
+            padding: 15px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .navbar a:hover {
+            background: rgba(255, 165, 0, 0.8);
+            border-radius: 5px;
+        }
+
+        .about-container {
+            background: rgb(4, 78, 71);
+            padding: 50px;
+            border-radius: 10px;
+            max-width: 800px;
+            align-items: center;
+            opacity: 0;
+            animation: slideDown 1s ease forwards;
+            position: relative;
+            align-items: center;
+            
+        }
+
+        @keyframes slideDown {
+            0% {
+                top: -50px;
+                opacity: 0;
+            }
+            100% {
+                top: 10px;
+                opacity: 1;
+            }
+        }
+        
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: rgb(174, 250, 215);
+            font-family:fantasy;
+            text-decoration: underline;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #ff9800;
+            color: white;
+            font-size: 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: rgb(6, 27, 69);
+        }
+        .buttn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #4d8782;
+            color: white;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: 0.3s;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: rgb(202, 135, 81);
+        }
+       
+
+    </style>
+</head>
+<body>
+  
+
+    <div class="about-container">
+        <h1 style="font-family:Cambria">About Beachside Bliss</h1>
+        <p style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+            Nestled along the serene coastline, Beachside Bliss offers a unique fine dining experience
+            with breathtaking ocean views. Our menu is crafted with the freshest ingredients, ensuring
+            an unforgettable taste. Whether you're here for a romantic dinner or a family gathering,
+            we promise an ambience that soothes the soul and delights the taste buds.
+<br>
+            <a href="bookingpage.html" class="buttn">Book your table now!</a>
+
+          
+        </p>
+        
+    </div>
+</body>
+</html>

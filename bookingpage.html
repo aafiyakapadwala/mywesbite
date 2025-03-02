@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking | Beachside Bliss</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .welcome-box {
+            background: rgba(216, 165, 14, 0.7);
+            color: #03020a;
+            padding: 10px 20px;
+            position: fixed;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 5px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            opacity: 0;
+            animation: slideDown 1s ease forwards;
+        }
+
+        @keyframes slideDown {
+            0% {
+                top: -50px;
+                opacity: 0;
+            }
+            100% {
+                top: 10px;
+                opacity: 1;
+            }
+           
+        }
+            
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #ffcc00;
+            font-style: oblique;
+            
+        }
+        body {
+            background: url('https://img.etimg.com/photo/msid-89778675,imgsize-13456/Amanwella%2CSriLanka-Outsidedining%2Cevening.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            @keyframes move {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(50px); }
+            100% { transform: translateX(0); }
+        }
+
+        }
+
+        .booking-container {
+            background: linear-gradient(135deg, #112343, #1b2c03);
+            padding: 40px;
+            border-radius: 10px;
+            max-width: 500px;
+            width: 100%;
+            font-style: oblique;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+            @keyframes move {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(50px); }
+            100% { transform: translateX(0); }
+        }
+
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #ffcc00;
+        }
+
+        label {
+            font-size: 1.2rem;
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #ff9800;
+            color: white;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: 0.3s;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: rgb(6, 27, 69);
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="booking-container">
+        <h1 class= "welcome-box">Kindly fill your details.</h1>
+        <h1>Reserve Your Table</h1>
+        <form action="thankyou.html" method="POST">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Time</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="guests">Number of Guests</label>
+            <select id="guests" name="guests" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6+</option>
+            </select>
+    
+                <button type="submit" class="btn">Book Now</button>
+            </form>
+            <footer class="footer">
+                &copy; 2025 Beachside Bliss. All rights reserved.
+     <footer class="footer">
+            &copy; 2025 Beachside Bliss. All rights reserved.
+        </footer>
+            
+    </div>
+   
+    
+</body>
+</html>

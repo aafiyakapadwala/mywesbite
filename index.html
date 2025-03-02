@@ -1,0 +1,153 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beachside Bites</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Times New Roman', serif;
+            background: url('https://www.caborentalsbyjane.com/wp-content/uploads/2023/05/Restaurants-with-a-View.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        
+        .navbar {
+            background-color: rgba(173, 216, 230, 0.8); 
+            overflow: hidden;
+            display: flex;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            padding: 10px 0;
+        }
+        
+        .navbar a {
+            color: navy;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+            text-align: center;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        
+        .navbar a:hover {
+            background-color: rgb(8, 38, 75);
+            color: white;
+        }
+        
+        .navbar .menu {
+            margin-left: auto;
+            display: flex;
+        }
+        
+        .container {
+            background-color: rgba(14, 66, 143, 0.7);
+            padding: 50px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            opacity: 0;
+            animation: slideDown 1s ease forwards;
+        }
+
+        @keyframes slideDown {
+            0% {
+                top: -50px;
+                opacity: 0;
+            }
+            100% {
+                top: 10px;
+                opacity: 1;
+            }
+        }
+        
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 600;
+            text-decoration: wavy;
+            font-style: oblique;
+            color: whitesmoke;
+        }
+        
+        p {
+            font-size: 1.2rem;
+            margin: 20px 0;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #ff9800;
+            color: white;
+            font-size: 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        
+        .btn:hover {
+            background: rgb(6, 27, 69);
+        }
+
+        @keyframes move {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(50px); }
+            100% { transform: translateX(0); }
+        }
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #06000e;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+            align-items: baseline;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="file:///C:/Users/kapad/Desktop/hello/hi.html" class="logo">BEACHSIDE BLISS</a>
+        <div class="menu">
+        
+            <a href="file:///C:/Users/kapad/Desktop/hello/about.html">ABOUT</a>
+            <a href="file:///C:/Users/kapad/Desktop/hello/menu.html">MENU</a>
+            <a href="file:///C:/Users/kapad/Desktop/hello/bookingpage.html#">BOOKING</a>
+            <a href="file:///C:/Users/kapad/Desktop/hello/contactpage.html">CONTACT</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 style="font-family: 'Lucida Sans;">Welcome to Beachside Bliss
+ </h1>
+        <p>Experience the best fine dining with exquisite flavors and a charming ambiance.</p>
+        <a href="file:///C:/Users/kapad/Desktop/hello/menu.html" class="btn">Explore Menu</a>
+    </div>
+
+        <footer class="footer" >
+            &copy; 2025 Beachside Bliss. All rights reserved.
+ <footer class="footer">
+        &copy; 2025 Beachside Bliss. All rights reserved.
+    </footer>
+
+
+    <div class="animated-box"></div>
+</body>
+</html>

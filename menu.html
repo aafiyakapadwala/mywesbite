@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Beachside Bliss</title>
+    <style>
+        
+        .welcome-box {
+            background: rgba(215, 110, 19, 0.7);
+            color: #03020a;
+            padding: 10px 20px;
+            position: fixed;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 5px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            opacity: 0;
+            animation: slideDown 1s ease forwards;
+        }
+
+        @keyframes slideDown {
+            0% {
+                top: -50px;
+                opacity: 0;
+            }
+            100% {
+                top: 10px;
+                opacity: 1;
+            }
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            color: white;
+            text-align: center;
+            padding: 20px;
+            background-image: url(https://img.freepik.com/premium-photo/plain-black-background-menus-plain-black-background-solid-black-backdrop-design_1020697-739831.jpg);
+            height: 100vh;
+         background-repeat:repeat;
+         background-size:cover;
+        
+         
+        }
+
+    
+    
+
+        .menu-container {
+            background: rgba(63, 63, 66, 0.7);
+            padding: 40px;
+            border-radius: 10px;
+            max-width: 800px;
+            margin: 100px auto 20px;
+            opacity: 0;
+            animation: slideDown 1s ease forwards;
+        }
+
+        @keyframes slideDown {
+            0% {
+                top: -50px;
+                opacity: 0;
+            }
+            100% {
+                top: 10px;
+                opacity: 1;
+            }
+        }
+        
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #ffcc00;
+            font-style: oblique;
+            
+        }
+
+        .menu-section {
+            margin-bottom: 20px;
+        }
+        a{
+           
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-style: italic;
+            color: white;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: rgb(202, 218, 82);
+        }
+
+        .menu-item {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            text-align: justify;
+            display: grid;
+            place-items: center;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #ffcc00;
+        }
+
+        .menu-item img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            margin: 10px;
+            width: 150px; 
+    height: 150px;
+    border-radius: 10px;
+    margin: 10px;
+        }
+        .footer {
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            background-color: #06000e;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        
+    </div>
+
+    <div class="menu-container">
+        <h1>OUR MENU</h1><hr>
+        <h1 class= "welcome-box">ORDER YOUR FAVS!</h1>
+        <div class="menu-section">
+            <form>
+                <form action="bookingpage.html" method="post">
+            <h2>Starters</h2>
+            <p class="menu-item"><img src="https://media.istockphoto.com/id/620402520/photo/fish-fry-served-on-banana-leaf.jpg?s=612x612&w=0&k=20&c=_GUzZuYv_nzvM7Sw1a6NLpkrngUN-E2V0iHhyjwYN2M="> Fried Fish<span class="price"> ₹590</span></p>
+            <a href="file:///C:/Users/kapad/Desktop/hello/bookingpage.html#" class="btn">Order Now</a>
+
+            <p class="menu-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxsib8hTL3WJC_wG4LdMIUGknxyCdK1wSOLA&s https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxsib8hTL3WJC_wG4LdMIUGknxyCdK1wSOLA&s"> Crispy Chicken<span class="price"> ₹450</span></p><a href="file:///C:/Users/kapad/Desktop/hello/bookingpage.html#" class="btn">Order Now</a>
+
+        </div></form><hr>
+        
+        <div class="menu-section">
+            <h2>Main Course</h2>
+            <p class="menu-item"><img src="C:\Users\kapad\Desktop\download (1).jpeg"> Fish Fry<span class="price"> ₹500</span></p> <a href="file:///C:/Users/kapad/Desktop/hello/bookingpage.html#" class="btn">Order Now</a>
+
+            <p class="menu-item"><img src="C:\Users\kapad\Desktop\Chicken-Curry-recipe.jpg"> Shahi Murgh Masala<span class="price"> ₹800</span></p> <a href="file:///C:/Users/kapad/Desktop/hello/bookingpage.html#" class="btn">Order Now</a>
+
+           </div><hr>
+
+        <div class="menu-section">
+            <h2>Indian Cuisine</h2>
+            <p class="menu-item"><img src="C:\Users\kapad\Desktop\butter-chicken-ac2ff98.jpg" alt="Butter Chicken"> Butter Chicken <span class="price"> ₹400</span></p>  <a href="file:///C:/Users/kapad/Desktop/hello/bookingpage.html#" class="btn">Order Now</a>
+            <p class="menu-item"><img src="C:\Users\kapad\Desktop\images (4).jpeg" alt="Biryani"> Hyderabadi Biryani <span class="price"> ₹780</span></p>  <a href="file:///C:/Users/kapad/Desktop/hello/bookingpage.html#" class="btn">Order Now</a>
+            <p class="menu-item"><img src="C:\Users\kapad\Desktop\potato-stuffed-naan-vegan-thumb-2.jpg" alt="Naan"> Garlic Naan <span class="price"> ₹100</span></p>  <a href="file:///C:/Users/kapad/Desktop/hello/bookingpage.html#" class="btn">Order Now</a>
+        </div><hr>
+        
+        <div class="menu-section">
+            <h2>Desserts</h2>
+            <p class="menu-item"><img src="C:\Users\kapad\Desktop\istockphoto-957545266-612x612.jpg" alt="Juice"> Fresh Coconut Juice<span class="price"> ₹220</span></p>  <a href="file:///C:/Users/kapad/Desktop/hello/bookingpage.html#" class="btn">Order Now</a>
+            <p class="menu-item"><img src="C:\Users\kapad\Desktop\Gulab-Jamun-Thumbnail.jpg" alt="Gulab Jamun"> Gulab Jamun - <span class="price"> ₹120</span>  <a href="file:///C:/Users/kapad/Desktop/hello/bookingpage.html#" class="btn">Order Now</a>
+        </div>
+        <footer class="footer">
+            &copy; 2025 Beachside Bliss. All rights reserved.
+ <footer class="footer">
+        &copy; 2025 Beachside Bliss. All rights reserved.
+    </footer>
+    </div>
+</body>
+</html>
